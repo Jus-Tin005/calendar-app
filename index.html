@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+            <div class="btn btn-month" onclick="$('#months').toggle();">
+                    <span id="current-month">Month</span>
+                    <div id="months" class="months dropdown">
+                        <!-- <div class="dropdown-item">Jan</div>
+                        <div class="dropdown-item">Feb</div>
+                        <div class="dropdown-item">Mar</div>
+                        <div class="dropdown-item">Apr</div>
+                        <div class="dropdown-item">May</div> -->
+                    </div>
+            </div>
+           
+            <div class="btn btn-year" onclick="$('#years').toggle();">
+                    <span id="current-year">Year</span>
+                    <div id="years" class="years dropdown">
+                        <!-- <div class="dropdown-item">2000</div>
+                        <div class="dropdown-item">2001</div>
+                        <div class="dropdown-item">2002</div>
+                        <div class="dropdown-item">2003</div>
+                        <div class="dropdown-item">2004</div> -->
+                    </div>
+            </div>
+            
+            <div class="clear"></div>
+
+            <div class="cal-dates">
+                <div class="days">
+                    <label  class="day dayname">Sun</label>
+                    <label  class="day dayname">Mon</label>
+                    <label  class="day dayname">Tue</label>
+                    <label  class="day dayname">Wed</label>
+                    <label  class="day dayname">Thur</label>
+                    <label  class="day dayname">Fri</label>     
+                    <label  class="day dayname">Sat</label>
+
+                    <div class="clear"></div>
+                </div>
+
+                <div id="cal-days" class="days cal-days">
+                    <!-- <div id="" class="day">1</div>
+                    <div id="" class="day">2</div>
+                    <div id="" class="day">3</div>
+                    <div id="" class="day">4</div>
+                    <div id="" class="day">5</div>
+                    <div id="" class="day">6</div>
+                    <div id="" class="day">7</div>
+                    <div id="" class="day">8</div>
+                    <div id="" class="day">9</div>
+                    <div id="" class="day">10</div>
+                    <div id="" class="day">11</div>
+                    <div id="" class="day">12</div>
+                    <div id="" class="day">13</div>
+                    <div id="" class="day">14</div>
+                    <div id="" class="day">15</div> -->
+                </div>
+            </div>
+             
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
